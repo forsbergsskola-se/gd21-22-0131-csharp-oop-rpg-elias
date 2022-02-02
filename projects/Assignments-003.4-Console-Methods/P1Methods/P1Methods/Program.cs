@@ -1,24 +1,24 @@
-﻿CountUp(1);
-CountDown(1);
-CountUp(2);
-CountDown(2);
-CountUp(3);
-CountDown(3);
+﻿Counting(2, 3);
+Counting(100, 101);
+Counting(10, 8);
+Counting(1, -1);
+Counting(1337, 1337);
 
-void CountUp(int to)
+void Counting(int from, int to)
 {
-    Console.WriteLine("Counting from 0 to " + to + ":" );
-    for (int number = 0; number <= to; number++)
+    Console.WriteLine("Counting from " + from +" to " + to + ":");
+    if (to == -1 || to == 8)
     {
-        Console.WriteLine(number);
+        for (int number = from; number >= to; number--)
+        {
+            Console.WriteLine(number);
+        }
     }
-}
-
-void CountDown(int from)
-{
-    Console.WriteLine("Counting from " + from +" to 0:" );
-    for (int number = from; number >= 0; number--)
+    else
     {
-        Console.WriteLine(number);
+        for (int number = from; number <= to; number++)
+        {
+            Console.WriteLine(number);
+        }
     }
 }

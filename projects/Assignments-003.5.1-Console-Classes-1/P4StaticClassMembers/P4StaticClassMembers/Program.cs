@@ -1,3 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-Console.WriteLine("Hello, World!");
+﻿static class SuperMath
+{
+    static void Lerp()
+    {
+        float from;
+        float to;
+        float t;
+        
+    }
+}

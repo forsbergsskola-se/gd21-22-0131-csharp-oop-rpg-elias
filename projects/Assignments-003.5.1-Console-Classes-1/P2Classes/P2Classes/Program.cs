@@ -2,13 +2,13 @@
 Animal animal1 = new Animal();
 Car car1 = new Car();
 
-person1.Head();
-animal1.Paw();
-car1.Tires();
+person1.person();
+animal1.animal();
+car1.car();
 
 class Person
 {
-    public void Head()
+    public void person()
     {
         Console.WriteLine("Person");
     }
@@ -16,7 +16,7 @@ class Person
 
 class Animal
 {
-    public void Paw()
+    public void animal()
     {
         Console.WriteLine("Animal");
     }
@@ -24,7 +24,7 @@ class Animal
 
 class Car
 {
-    public void Tires()
+    public void car()
     {
         Console.WriteLine("Car");
     }

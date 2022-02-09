@@ -6,8 +6,24 @@ person1.person();
 animal1.animal();
 car1.car();
 
+Person person = new Person();
+person.IntroduceYourself();
 class Person
 {
+    public string name;
+    string[] persons = new string[3];
+    public void IntroduceYourself()
+    {
+        for(var name = 0; name < persons.Length; name++)
+        { 
+            Console.WriteLine("Give me a name.");
+            persons[name] = Console.ReadLine();
+        }
+        foreach (string value in persons)
+        {
+            Console.WriteLine($"Hello, my name is {value}");
+        }
+    }
     public void person()
     {
         Console.WriteLine("Person");

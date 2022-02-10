@@ -15,4 +15,10 @@
             names[2] = Console.ReadLine();
         }
     }
-    Console.WriteLine(names[0] + "," + names[1] + "," + names[2]);
+
+    for (int i = 0; i < names.Length - 1; i++)
+    {
+        Console.Write(names[i]);
+        Console.Write(",");
+    }
+    Console.Write(names[names.Length-1]);

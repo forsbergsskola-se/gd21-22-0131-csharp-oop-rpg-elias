@@ -21,7 +21,7 @@ class Person
         }
         foreach (string value in persons)
         {
-            Console.WriteLine($"Hello, my name is {value}");
+            Console.WriteLine("Hello, my name is" + name);
         }
     }
     public void person()

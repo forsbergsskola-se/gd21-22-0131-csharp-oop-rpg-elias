@@ -7,20 +7,19 @@
         unit skeleton = new unit("Skeleton", 111);
         unit ogre = new unit("Ogre", 100);
 
-        for (int i = 0; i < 3; i++)
+        while (leet.Health > 0)
         {
             Console.WriteLine("What do you want Leets health to be?");
             leet.Health = int.Parse(Console.ReadLine());
         }
 
         leet.Health += 50;
-        zombie.name = "Eva";
     }
 }
 
 public class unit
 {
-    public string name;
+    public string name { get; }
     public int id;
     public static int nextId;
 
@@ -29,7 +28,7 @@ public class unit
     
     public unit(string name, int maxHealth)
     {
-        this.name = name;
+        name = name;
         id = nextId++;
 
         this.maxHealth = maxHealth;

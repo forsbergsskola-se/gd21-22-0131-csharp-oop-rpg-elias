@@ -2,10 +2,10 @@
 {
     static void Main()
     {
-        unit leet = new unit("Leet", 1337);
-        unit zombie = new unit("Zombie", 123);
-        unit skeleton = new unit("Skeleton", 111);
-        unit ogre = new unit("Ogre", 100);
+        Unit leet = new Unit("Leet", 1337);
+        Unit zombie = new Unit("Zombie", 123);
+        Unit skeleton = new Unit("Skeleton", 111);
+        Unit ogre = new Unit("Ogre", 100);
 
         while (leet.Health > 0)
         {
@@ -17,18 +17,18 @@
     }
 }
 
-public class unit
+public class Unit
 {
-    public string name { get; }
+    public string name;
     public int id;
     public static int nextId;
 
     private int maxHealth;
     private int health;
     
-    public unit(string name, int maxHealth)
+    public Unit(string name, int maxHealth)
     {
-        name = name;
+        this.name = name;
         id = nextId++;
 
         this.maxHealth = maxHealth;
